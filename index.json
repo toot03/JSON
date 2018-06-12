@@ -1,0 +1,18 @@
+{
+  "dinosaure":[{
+    "nom":"Tyrannosaurus Rex",
+    "période":"Crétacé",
+  },
+  {
+    "nom":"Archaeopteryx",
+    "période":"Jurassique",
+  },
+  {
+    "nom":"Deinonychus",
+    "période":"Crétacé",
+  },
+  {
+    "nom":"Unaysaurus",
+    "période":"Trias",
+  }
+]}
