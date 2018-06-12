@@ -10,15 +10,14 @@
 <body>
 <p></p>
 <script>
-   var courses =document.getElementsByTagName("p")[0];
-   var xmlhttp = new XMLHttpRequest();
-   xmlhttp.open("GET","https://jsonplaceholder.typicode.com/posts",false);
-   xmlhttp.onreadystatechange = function () {
-       if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
-           courses = JSON.parse(xmlhttp.responseText);
-       }
-   };
-   xmlhttp.send(null);
+  var req=new XMLHttpRequest();
+  req.open("get","https://github.com/toot03/JSON/blob/master/index.json",false);
+  req.onreadystatechange=function () {
+      if (req.readyState==4 && req.status==200){
+          document.getElementsByTagName("p")[0].innerHTML=req.responseText;
+      }
+  };
+  req.send();
 </script>
 </body>
 </html>
